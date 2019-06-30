@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  max-width: 980px;
+  margin: 0px auto;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+}
+
+#title {
+  max-width: 700px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo #herb {
+  width: auto;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo #ul-logo {
+  width: 250px;
+  height: auto;
+}
+
+#maps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.map {
+  width: 30%;
+  background-color: #424242;
+}
+
+.map a {
+  color: #fff;
+}
+
+.map-image,
+.map-image img {
+  width: 100%;
+}
+
+.map-caption {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#footer {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  margin-top: 100px;
+}
+
+.map:hover {
+  background-color: #009432;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.map:hover a {
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0 10px;
+  }
+  #title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #maps {
+    flex-wrap: wrap;
+  }
+  .map {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #footer {
+    margin-top: 20px;
+  }
+}
