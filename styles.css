@@ -127,7 +127,7 @@ iframe {
   color: #fff;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body {
     padding: 0 10px;
   }
